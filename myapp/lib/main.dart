@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: StorePage(),
     );
   }
@@ -20,9 +20,76 @@ class StorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-     //asdfaaadsss
-      //asdfqwer
+    return Scaffold(
+      body: Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Container(
+              alignment: Alignment.topCenter,
+              color:Colors.teal[100],
+
+            ),
+          
+          Row(
+            children: [
+              ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blueAccent[400],
+
+                ),
+                onPressed: (){
+
+                },
+                label: Text("운동 시작하기"), 
+                icon: Icon(Icons.fitness_center),
+              ),
+              
+            ],
+          ),
+          Row(
+            children: [
+              ElevatedButton.icon(
+                 style: ElevatedButton.styleFrom(
+                  primary: Colors.blueAccent[400],
+                  
+                ),
+                onPressed: (){
+
+                },
+                label: Text("센서 설정하기"),
+                icon: Icon(Icons.settings_accessibility),
+              ),
+              
+            ],
+          ),
+          Row(
+            children: [
+              ElevatedButton.icon(
+                 style: ElevatedButton.styleFrom(
+                  primary: Colors.blueAccent[400],
+                  
+                ),
+                onPressed: (){
+
+                },
+                
+                label: Text("기록 확인하기"),
+                icon: Icon(Icons.note),
+              ),
+              
+            ],
+          ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: FloatingActionButton(
+              
+              child: Icon(Icons.bluetooth),
+              onPressed: (){},
+            ),
+          ),
+          
+        ],
+      ),
     );
   }
 }
