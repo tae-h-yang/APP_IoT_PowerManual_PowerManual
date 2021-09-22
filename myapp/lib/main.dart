@@ -5,6 +5,7 @@ void main() {
   
   runApp(new MaterialApp(
     title:"Planets",
+    theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFF736AB7)),
     home: new HomePage(),
   ));
 }

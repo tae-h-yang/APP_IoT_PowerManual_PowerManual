@@ -23,8 +23,8 @@ final subHeaderTextStyle = regularTextStyle.copyWith(
 );
 
 
-final planetCard = new Container(
-  height: 200.0,
+final squatsCard = new Container(
+  height: 120.0,
   margin: new EdgeInsets.only(left: 46.0),
 
   decoration: new BoxDecoration(
@@ -41,11 +41,11 @@ final planetCard = new Container(
   ),
 );
 
-final planetThumbnail = new Container(
+final squatsThumbnail = new Container(
   margin: new EdgeInsets.symmetric(vertical: 16.0),
   alignment: FractionalOffset.centerLeft,
   child: new Image(
-    image: new AssetImage('assets/img/mars.png' ),//여기
+    image: new AssetImage('assets/img/squats_icon.png' ),//여기
     height: 92.0,
     width: 92.0,
   ),
@@ -63,25 +63,25 @@ final planetThumbnail = new Container(
 
 
 class PlanetRow extends StatelessWidget {
-  final Planet planet;
-  PlanetRow({required this.planet});
+  //final Planet planet;
+  //PlanetRow({required this.planet});
   @override
 
 
-  final planetCardContent = Container(
-  margin: new EdgeInsets.fromLTRB(76.0, 16.0, 16.0, 16.0),
+  final squatsCardContent = Container(
+  margin: new EdgeInsets.fromLTRB(120.0, 16.0, 16.0, 16.0),
   constraints: new BoxConstraints.expand(),
   child: new Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
       new Container(height:4.0),
       new Text(
-        'planet.name',//여기
+        'Squart',//여기
         style: headerTextStyle,
       ),
       new Container(height: 10.0,),
       new Text(
-        'planet.location',//여기
+        '#legs #하체',//여기
         style: subHeaderTextStyle,
       ),
       new Container(
@@ -95,7 +95,7 @@ class PlanetRow extends StatelessWidget {
           new Expanded(
             child: new Row(
                   children: <Widget>[
-                    new Image.asset("assets/img/ic_distance.png", height: 12.0),
+                    //new Image.asset("assets/img/ic_distance.png", height: 12.0),
                     new Container(width: 8.0),
                     new Text("planet.distance", style: regularTextStyle),//여기
                   ]
@@ -105,7 +105,7 @@ class PlanetRow extends StatelessWidget {
           new Expanded(
             child: new Row(
                   children: <Widget>[
-                    new Image.asset("assets/img/ic_gravity.png", height: 12.0),
+                    //new Image.asset("assets/img/ic_gravity.png", height: 12.0),
                     new Container(width: 8.0),
                     new Text("planet.gravity", style: regularTextStyle),//여기
                   ]
@@ -122,67 +122,86 @@ class PlanetRow extends StatelessWidget {
 
   
   Widget build(BuildContext context) {
-    return new Container(
-        height: 120.0,
+    return new Column(
+      children: [
+        new Container(
+          //스쿼트
+        height: 130.0,
         margin: const EdgeInsets.symmetric(
-          vertical: 16.0,
+          vertical: 18.0,
           horizontal: 24.0,
         ),
         child: new Stack(children: <Widget>[
-          planetCard,
-          planetThumbnail,
-          planetCardContent,
+          squatsCard,
+          squatsThumbnail,
+          squatsCardContent,
         ]
         )
+        ),
+        new Container(
+          //벤치프레스
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          squatsCard,
+          squatsThumbnail,
+          squatsCardContent,
+        ]
+        )
+        ),
+         new Container(
+           //데드리프트
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          squatsCard,
+          squatsThumbnail,
+          squatsCardContent,
+        ]
+        )
+        ),
+        new Container(
+           //센서 설정
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          squatsCard,
+          squatsThumbnail,
+          squatsCardContent,
+        ]
+        )
+        ),
+        new Container(
+           //기록 확인
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          squatsCard,
+          squatsThumbnail,
+          squatsCardContent,
+        ]
+        )
+        ),
+      ],
         );
+      
+        
   }
+ 
 }
 
 
 
 
-class Planet {
-  final String id;
-  final String name;
-  final String location;
-  final String distance;
-  final String gravity;
-  final String description;
-  final String image;
-
-  const Planet(
-      {required this.id,
-      required this.name,
-      required this.location,
-      required this.distance,
-      required this.gravity,
-      required this.description,
-      required this.image});
-}
-
-List<Planet> planets = [
-  const Planet(
-      id: "1",
-      name: "Mars",
-      location: "milkyway galaxy",
-      distance: "229.km",
-      gravity: "3.22",
-      description: "lorem.......",
-      image: "assets/img/mars.png"),
-  const Planet(
-      id: "2",
-      name: "Neptune",
-      location: "milkyway galaxy",
-      distance: "229.km",
-      gravity: "3.22",
-      description: "lorem.......",
-      image: "assets/img/mars.png"),
-  const Planet(
-      id: "3",
-      name: "Moon",
-      location: "milkyway galaxy",
-      distance: "229.km",
-      gravity: "3.22",
-      description: "lorem.......",
-      image: "assets/img/mars.png")
-];

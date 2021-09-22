@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: new Column(children: <Widget>[
-        new GradientAppBar("treva"),
+        new GradientAppBar("Power Manual"),
         new HomePageBody(),
        
       ]),
