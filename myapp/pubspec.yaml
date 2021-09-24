@@ -67,7 +67,11 @@ flutter:
     - assets/img/deadlift_icon.png
     - assets/img/benchpress_icon.png
     - assets/img/squats_icon.png
-
+    - assets/img/data_icon.png
+    - assets/img/setting_icon.png
+    - assets/img/squats_background.jpg
+    - assets/img/squats_background1.jpg
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
