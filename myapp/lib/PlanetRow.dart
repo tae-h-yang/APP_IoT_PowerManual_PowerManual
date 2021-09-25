@@ -364,10 +364,13 @@ final dataCardContent = Container(
   ),
 );
 
+  
   Widget build(BuildContext context) {
     return new Column(
       children: [
+        
         new Container(
+          
           //스쿼트
         height: 130.0,
         margin: const EdgeInsets.symmetric(
