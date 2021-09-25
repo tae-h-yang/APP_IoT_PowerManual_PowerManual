@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/detail.dart';
 
 
 
@@ -23,73 +24,16 @@ final subHeaderTextStyle = regularTextStyle.copyWith(
 );
 
 
-final menuCard = new Container(
-  height: 120.0,
-  margin: new EdgeInsets.only(left: 46.0),
 
-  decoration: new BoxDecoration(
-    color: new Color(0xFF333366),
-    shape: BoxShape.rectangle,
-    borderRadius: new BorderRadius.circular(8.0),
-    boxShadow: <BoxShadow>[
-      new BoxShadow(
-        color: Colors.black12,
-        blurRadius: 10.0,
-        offset: new Offset(0.0, 10.0),
-      ),
-    ],
-  ),
-);
 
-final squatsThumbnail = new Container(
-  margin: new EdgeInsets.symmetric(vertical: 16.0),
-  alignment: FractionalOffset.centerLeft,
-  child: new Image(
-    image: new AssetImage('assets/img/squats_icon.png' ),//여기
-    height: 92.0,
-    width: 92.0,
-  ),
-);
 
-final benchpressThumbnail = new Container(
-  margin: new EdgeInsets.symmetric(vertical: 16.0),
-  alignment: FractionalOffset.centerLeft,
-  child: new Image(
-    image: new AssetImage('assets/img/benchpress_icon.png' ),//여기
-    height: 92.0,
-    width: 92.0,
-  ),
-);
 
-final deadliftThumbnail = new Container(
-  margin: new EdgeInsets.symmetric(vertical: 16.0),
-  alignment: FractionalOffset.centerLeft,
-  child: new Image(
-    image: new AssetImage('assets/img/deadlift_icon.png' ),//여기
-    height: 92.0,
-    width: 92.0,
-  ),
-);
 
-final settingThumbnail = new Container(
-  margin: new EdgeInsets.symmetric(vertical: 16.0),
-  alignment: FractionalOffset.centerLeft,
-  child: new Image(
-    image: new AssetImage('assets/img/setting_icon.png' ),//여기
-    height: 92.0,
-    width: 92.0,
-  ),
-);
 
-final dataThumbnail = new Container(
-  margin: new EdgeInsets.symmetric(vertical: 16.0),
-  alignment: FractionalOffset.centerLeft,
-  child: new Image(
-    image: new AssetImage('assets/img/data_icon.png' ),//여기
-    height: 92.0,
-    width: 92.0,
-  ),
-);
+
+
+
+
 
  Widget _planetValue({required String value, required String image}){
    return new Row(
@@ -101,14 +45,7 @@ final dataThumbnail = new Container(
      );
  } 
 
-
-class PlanetRow extends StatelessWidget {
-  //final Planet planet;
-  //PlanetRow({required this.planet});
-  @override
-
-
-  final squatsCardContent = Container(
+final squatsCardContent = Container(
   margin: new EdgeInsets.fromLTRB(120.0, 16.0, 16.0, 16.0),
   constraints: new BoxConstraints.expand(),
   child: new Column(
@@ -209,7 +146,8 @@ final benchpressCardContent = Container(
     ],
   ),
 );
-  
+
+
 final deadliftCardContent = Container(
   margin: new EdgeInsets.fromLTRB(120.0, 16.0, 16.0, 16.0),
   constraints: new BoxConstraints.expand(),
@@ -312,7 +250,6 @@ final settingCardContent = Container(
   ),
 );
 
-
 final dataCardContent = Container(
   margin: new EdgeInsets.fromLTRB(120.0, 16.0, 16.0, 16.0),
   constraints: new BoxConstraints.expand(),
@@ -363,6 +300,316 @@ final dataCardContent = Container(
     ],
   ),
 );
+
+
+
+class SquatsCard extends StatelessWidget{
+  @override
+
+  
+
+final squatsThumbnail = new Container(
+  margin: new EdgeInsets.symmetric(vertical: 16.0),
+  alignment: FractionalOffset.centerLeft,
+  child: new Image(
+    image: new AssetImage('assets/img/squats_icon.png' ),//여기
+    height: 92.0,
+    width: 92.0,
+  ),
+);
+
+final squatsMenuCard = new Container(
+  child: squatsCardContent,
+  height: 120.0,
+  margin: new EdgeInsets.only(left: 46.0),
+
+  decoration: new BoxDecoration(
+    color: new Color(0xFF333366),
+    shape: BoxShape.rectangle,
+    borderRadius: new BorderRadius.circular(8.0),
+    boxShadow: <BoxShadow>[
+      new BoxShadow(
+        color: Colors.black12,
+        blurRadius: 10.0,
+        offset: new Offset(0.0, 10.0),
+      ),
+    ],
+  ),
+);
+
+  Widget build(BuildContext context){
+    return new GestureDetector(
+      child: Container(
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          squatsMenuCard,
+          squatsThumbnail,
+          
+        ]
+        )
+      ),
+      onTap: (){
+        Navigator.push(
+          context,
+           MaterialPageRoute(builder: (context)=>DetailPage()),
+                  
+          );
+      },
+    );
+  }
+
+}
+
+class BenchpressCard extends StatelessWidget{
+  @override
+  
+  final benchpressThumbnail = new Container(
+  margin: new EdgeInsets.symmetric(vertical: 16.0),
+  alignment: FractionalOffset.centerLeft,
+  child: new Image(
+    image: new AssetImage('assets/img/benchpress_icon.png' ),//여기
+    height: 92.0,
+    width: 92.0,
+  ),
+  );
+
+final benchpressMenuCard = new Container(
+  child: benchpressCardContent,
+  height: 120.0,
+  margin: new EdgeInsets.only(left: 46.0),
+
+  decoration: new BoxDecoration(
+    color: new Color(0xFF333366),
+    shape: BoxShape.rectangle,
+    borderRadius: new BorderRadius.circular(8.0),
+    boxShadow: <BoxShadow>[
+      new BoxShadow(
+        color: Colors.black12,
+        blurRadius: 10.0,
+        offset: new Offset(0.0, 10.0),
+      ),
+    ],
+  ),
+);
+
+
+  Widget build(BuildContext context){
+    return new GestureDetector(
+      child: Container(
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          benchpressMenuCard,
+          benchpressThumbnail,
+          
+        ]
+        )
+      ),
+      onTap:(){
+        Navigator.push(
+          context, 
+         MaterialPageRoute(builder: (context)=>DetailPage()),
+         
+        );
+      }
+    );
+  }
+
+
+}
+
+class Deadliftcard extends StatelessWidget{
+  @override
+
+  final deadliftThumbnail = new Container(
+  margin: new EdgeInsets.symmetric(vertical: 16.0),
+  alignment: FractionalOffset.centerLeft,
+  child: new Image(
+    image: new AssetImage('assets/img/deadlift_icon.png' ),//여기
+    height: 92.0,
+    width: 92.0,
+  ),
+);
+  final deadliftMenuCard = new Container(
+  child: deadliftCardContent,
+  height: 120.0,
+  margin: new EdgeInsets.only(left: 46.0),
+
+  decoration: new BoxDecoration(
+    color: new Color(0xFF333366),
+    shape: BoxShape.rectangle,
+    borderRadius: new BorderRadius.circular(8.0),
+    boxShadow: <BoxShadow>[
+      new BoxShadow(
+        color: Colors.black12,
+        blurRadius: 10.0,
+        offset: new Offset(0.0, 10.0),
+      ),
+    ],
+  ),
+);
+  
+  Widget build(BuildContext context){
+    return new GestureDetector(
+      child: Container(
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          deadliftMenuCard,
+          deadliftThumbnail,
+          
+        ]
+        )
+      ),
+      onTap:(){
+        Navigator.push(
+          context, 
+         MaterialPageRoute(builder: (context)=>DetailPage()),
+         
+        );
+      }
+    );
+  }
+
+}
+
+class Setting extends StatelessWidget{
+  @override
+
+  final settingThumbnail = new Container(
+  margin: new EdgeInsets.symmetric(vertical: 16.0),
+  alignment: FractionalOffset.centerLeft,
+  child: new Image(
+    image: new AssetImage('assets/img/setting_icon.png' ),//여기
+    height: 92.0,
+    width: 92.0,
+  ),
+);
+final settingMenuCard = new Container(
+  child: settingCardContent,
+  height: 120.0,
+  margin: new EdgeInsets.only(left: 46.0),
+
+  decoration: new BoxDecoration(
+    color: new Color(0xFF333366),
+    shape: BoxShape.rectangle,
+    borderRadius: new BorderRadius.circular(8.0),
+    boxShadow: <BoxShadow>[
+      new BoxShadow(
+        color: Colors.black12,
+        blurRadius: 10.0,
+        offset: new Offset(0.0, 10.0),
+      ),
+    ],
+  ),
+);
+  Widget build(BuildContext context){
+    return new GestureDetector(
+      child: Container(
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          settingMenuCard,
+          settingThumbnail,
+          
+        ]
+        )
+      ),
+      onTap:(){
+        Navigator.push(
+          context, 
+         MaterialPageRoute(builder: (context)=>DetailPage()),
+         
+        );
+      }
+    );
+  }
+
+}
+
+class Data extends StatelessWidget{
+  @override
+  final dataThumbnail = new Container(
+  margin: new EdgeInsets.symmetric(vertical: 16.0),
+  alignment: FractionalOffset.centerLeft,
+  child: new Image(
+    image: new AssetImage('assets/img/data_icon.png' ),//여기
+    height: 92.0,
+    width: 92.0,
+  ),
+);
+final dataMenuCard = new Container(
+  child: dataCardContent,
+  height: 120.0,
+  margin: new EdgeInsets.only(left: 46.0),
+
+  decoration: new BoxDecoration(
+    color: new Color(0xFF333366),
+    shape: BoxShape.rectangle,
+    borderRadius: new BorderRadius.circular(8.0),
+    boxShadow: <BoxShadow>[
+      new BoxShadow(
+        color: Colors.black12,
+        blurRadius: 10.0,
+        offset: new Offset(0.0, 10.0),
+      ),
+    ],
+  ),
+);
+
+Widget build(BuildContext context){
+    return new GestureDetector(
+      child: Container(
+        height: 130.0,
+        margin: const EdgeInsets.symmetric(
+          vertical: 18.0,
+          horizontal: 24.0,
+        ),
+        child: new Stack(children: <Widget>[
+          dataMenuCard,
+          dataThumbnail,
+          
+        ]
+        )
+      ),
+      onTap:(){
+        Navigator.push(
+          context, 
+         MaterialPageRoute(builder: (context)=>DetailPage()),
+         
+        );
+      }
+    );
+  }
+}
+
+/*
+class PlanetRow extends StatelessWidget {
+  //final Planet planet;
+  //PlanetRow({required this.planet});
+  @override
+
+
+  
+
+
+
+
+
+
 
   
   Widget build(BuildContext context) {
@@ -446,4 +693,4 @@ final dataCardContent = Container(
         
   }
  
-}
+}*/

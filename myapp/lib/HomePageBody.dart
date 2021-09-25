@@ -28,7 +28,15 @@ class HomePageBody extends StatelessWidget {
     );*/
     
     color: new Color(0xFF736AB7);
-    return new PlanetRow();
+    return new Column(
+      children: <Widget>[
+        SquatsCard(),
+        BenchpressCard(),
+        Deadliftcard(),
+        Setting(),
+        Data(),
+      ],
+    );
    
 
 
