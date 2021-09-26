@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/detail.dart';
+import 'package:myapp/detail/SquartDetail.dart';
+import './detail/SquartDetail.dart';
 
 
 
@@ -355,7 +356,7 @@ final squatsMenuCard = new Container(
       onTap: (){
         Navigator.push(
           context,
-           MaterialPageRoute(builder: (context)=>DetailPage()),
+           MaterialPageRoute(builder: (context)=>SquatsDetailPage()),
                   
           );
       },
@@ -415,7 +416,7 @@ final benchpressMenuCard = new Container(
       onTap:(){
         Navigator.push(
           context, 
-         MaterialPageRoute(builder: (context)=>DetailPage()),
+         MaterialPageRoute(builder: (context)=>SquatsDetailPage()),
          
         );
       }
@@ -474,7 +475,7 @@ class Deadliftcard extends StatelessWidget{
       onTap:(){
         Navigator.push(
           context, 
-         MaterialPageRoute(builder: (context)=>DetailPage()),
+         MaterialPageRoute(builder: (context)=>SquatsDetailPage()),
          
         );
       }
@@ -531,7 +532,7 @@ final settingMenuCard = new Container(
       onTap:(){
         Navigator.push(
           context, 
-         MaterialPageRoute(builder: (context)=>DetailPage()),
+         MaterialPageRoute(builder: (context)=>SquatsDetailPage()),
          
         );
       }
@@ -588,7 +589,7 @@ Widget build(BuildContext context){
       onTap:(){
         Navigator.push(
           context, 
-         MaterialPageRoute(builder: (context)=>DetailPage()),
+         MaterialPageRoute(builder: (context)=>SquatsDetailPage()),
          
         );
       }

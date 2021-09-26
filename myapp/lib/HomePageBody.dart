@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './PlanetRow.dart';
+import 'MenuRow.dart';
 
 class HomePageBody extends StatelessWidget {
   @override

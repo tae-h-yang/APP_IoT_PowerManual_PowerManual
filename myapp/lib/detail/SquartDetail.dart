@@ -5,8 +5,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import './PlanetRow.dart';
-class DetailPage extends StatelessWidget{
+import '../MenuRow.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
+import 'SquatsYoutube.dart';
+class SquatsDetailPage extends StatelessWidget{
 
 
 
@@ -24,6 +26,41 @@ class DetailPage extends StatelessWidget{
           _getToolbar(context),
           ],
         ),
+      ),
+
+     
+
+
+
+
+
+
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (index)=>{
+         
+        },
+        currentIndex: 0,
+        selectedItemColor: Color(0xFF736AB7),
+        unselectedItemColor: Color(0x42000000),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info_outline),
+            title: Text('info'), 
+            
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.accessibility_new),
+            title: Text('stretching'), 
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.duo_rounded),
+            title: Text('guide'), 
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.fitness_center),
+            title: Text('exercise'), 
+          ),
+        ],
       ),
     );
   }
@@ -202,3 +239,53 @@ final detailCard = new Container(
     ],
   ),
 );
+/*
+class BottomBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: new Color(0xFFFFEB3B), //색상
+      child: Container(
+        height: 70,
+        padding: EdgeInsets.only(bottom: 10, top: 5),
+        child: TabBar(
+          indicatorSize: TabBarIndicatorSize.label,
+          indicatorColor: colorThemeRed(),
+          indicatorWeight: 4,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.black38,
+          labelStyle: TextStyle(
+              fontSize: 17, fontFamilyFallback: fontFamily('Poppins')),
+ 
+          tabs: [
+            Tab(
+              icon: Icon(
+                Icons.home,
+                size: 20,
+              ),
+              text: 'Home',
+            ),
+            Tab(
+              icon: Icon(Icons.sort_by_alpha_rounded, size: 20),
+              text: 'Vocab',
+            ),
+            Tab(
+              icon: Icon(
+                Icons.library_books,
+                size: 20,
+              ),
+              text: 'Library',
+            ),
+            Tab(
+              icon: Icon(
+                Icons.person,
+                size: 20,
+              ),
+              text: 'MyPage',
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}*/
