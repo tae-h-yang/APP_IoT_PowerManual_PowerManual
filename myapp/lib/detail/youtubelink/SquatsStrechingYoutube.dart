@@ -12,22 +12,23 @@ class YoutubeModel {
   const YoutubeModel({required this.id, required this.youtubeId});
 }
 
-class YoutubePlayerDemo extends StatefulWidget {
-  YoutubePlayerDemo({Key? key, required this.title}) : super(key: key);
+class SquatsStrechingYoutubePlayerDemo extends StatefulWidget {
+  SquatsStrechingYoutubePlayerDemo({Key? key, required this.title}) : super(key: key);
   final String title;
+  
 
   @override
   _YoutubePlayerDemoState createState() => _YoutubePlayerDemoState();
 }
 
-class _YoutubePlayerDemoState extends State<YoutubePlayerDemo> {
+class _YoutubePlayerDemoState extends State<SquatsStrechingYoutubePlayerDemo> {
   late YoutubePlayerController _ytbPlayerController;
   List<YoutubeModel> videosList = [
-    YoutubeModel(id: 1, youtubeId: 'UBVPNC1FBgc'),
-    YoutubeModel(id: 2, youtubeId: 'UQGoVB_zMYQ'),
+    YoutubeModel(id: 1, youtubeId: 'UBVPNC1FBgc'),//스쿼트 스트레칭
+    /*YoutubeModel(id: 2, youtubeId: 'aclHkVaku9U'),//스쿼트 운동방법
     YoutubeModel(id: 3, youtubeId: 'FLcRb289uEM'),
     YoutubeModel(id: 4, youtubeId: 'g2nMKzhkvxw'),
-    YoutubeModel(id: 5, youtubeId: 'qoDPvFAk2Vg'),
+    YoutubeModel(id: 5, youtubeId: 'qoDPvFAk2Vg'),*/
   ];
 
   @override
@@ -79,8 +80,8 @@ class _YoutubePlayerDemoState extends State<YoutubePlayerDemo> {
         child: Column(
           children: [
             _buildYtbView(),
-            _buildMoreVideoTitle(),
-            _buildMoreVideosView(),
+            //_buildMoreVideoTitle(),
+            //_buildMoreVideosView(),
           ],
         ),
       ),
@@ -111,7 +112,7 @@ class _YoutubePlayerDemoState extends State<YoutubePlayerDemo> {
     );
   }
 
-  _buildMoreVideosView() {
+  /*_buildMoreVideosView() {
     return Expanded(
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 15),
@@ -158,5 +159,5 @@ class _YoutubePlayerDemoState extends State<YoutubePlayerDemo> {
             }),
       ),
     );
-  }
+  }*/
 }

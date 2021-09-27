@@ -5,14 +5,40 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../MenuRow.dart';
-import 'package:cupertino_icons/cupertino_icons.dart';
-import 'SquatsYoutube.dart';
+//import '.../MenuRow.dart';
+
+final baseTextStyle = const TextStyle(
+  fontFamily: 'Poppins'
+);
+
+final headerTextStyle = baseTextStyle.copyWith(
+  color: Colors.white,
+  fontSize:  18.0,
+  fontWeight: FontWeight.w600
+);
+
+final regularTextStyle = baseTextStyle.copyWith(
+  color: const Color(0xffb6b2df),
+  fontSize: 9.0,
+  fontWeight: FontWeight.w400
+);
+
+final subHeaderTextStyle = regularTextStyle.copyWith(
+  fontSize: 12.0
+);
+
+
+
+
 class SquatsDetailPage extends StatelessWidget{
 
 
 
   @override
+
+ 
+
+
   Widget build(BuildContext context){
     return new Scaffold(
       body: new Container(
@@ -35,33 +61,7 @@ class SquatsDetailPage extends StatelessWidget{
 
 
 
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (index)=>{
-         
-        },
-        currentIndex: 0,
-        selectedItemColor: Color(0xFF736AB7),
-        unselectedItemColor: Color(0x42000000),
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.info_outline),
-            title: Text('info'), 
-            
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.accessibility_new),
-            title: Text('stretching'), 
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.duo_rounded),
-            title: Text('guide'), 
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.fitness_center),
-            title: Text('exercise'), 
-          ),
-        ],
-      ),
+      
     );
   }
 

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/detail/SquatsYoutube.dart';
+import 'package:myapp/detail/squatsCard/SquatsBeforeStart.dart';
+import 'package:myapp/detail/youtubelink/SquatsStrechingYoutube.dart';
 import './HomePage.dart';
-import './detail/SquartDetail.dart';
+
 void main() {
   
   
   runApp(new MaterialApp(
     title:"Planets",
     theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFF736AB7)),
-    //home: new HomePage(),
-    home: new YoutubePlayerDemo(title: "Squats Stretching",),
+    home: new HomePage(),
+    //home: new TestPage(),
   ));
 }
 /*
