@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/detail/benchpressCard/BenchPressBeforeStart.dart';
 import 'package:myapp/detail/squatsCard/SquatsBeforeStart.dart';
 
 
@@ -67,7 +68,7 @@ final squatsCardContent = Container(
         width: 18.0,
         color: new Color(0xff00c6ff),
       ),
-      new Row(
+      /*new Row(
         children: <Widget>[
           new Expanded(
             child: new Row(
@@ -91,7 +92,7 @@ final squatsCardContent = Container(
           
           
         ],
-      ),
+      ),*/
     ],
   ),
 );
@@ -118,6 +119,7 @@ final benchpressCardContent = Container(
         width: 18.0,
         color: new Color(0xff00c6ff),
       ),
+/*
       new Row(
         children: <Widget>[
           new Expanded(
@@ -142,13 +144,13 @@ final benchpressCardContent = Container(
           
           
         ],
-      ),
+      ),*/
     ],
   ),
 );
 
 
-final deadliftCardContent = Container(
+final alarmCardContent = Container(
   margin: new EdgeInsets.fromLTRB(120.0, 16.0, 16.0, 16.0),
   constraints: new BoxConstraints.expand(),
   child: new Column(
@@ -156,12 +158,12 @@ final deadliftCardContent = Container(
     children: <Widget>[
       new Container(height:4.0),
       new Text(
-        'DeadLift',//여기
+        'Alarm',//여기
         style: headerTextStyle,
       ),
       new Container(height: 10.0,),
       new Text(
-        '#Upper Back #Lower Back #등',//여기
+        '#Alarm #보충제 시간 알람. #먹는것까지 운동',//여기
         style: subHeaderTextStyle,
       ),
       new Container(
@@ -170,6 +172,7 @@ final deadliftCardContent = Container(
         width: 18.0,
         color: new Color(0xff00c6ff),
       ),
+      /*
       new Row(
         children: <Widget>[
           new Expanded(
@@ -194,7 +197,7 @@ final deadliftCardContent = Container(
           
           
         ],
-      ),
+      ),*/
     ],
   ),
 );
@@ -221,6 +224,7 @@ final settingCardContent = Container(
         width: 18.0,
         color: new Color(0xff00c6ff),
       ),
+      /*
       new Row(
         children: <Widget>[
           new Expanded(
@@ -245,7 +249,7 @@ final settingCardContent = Container(
           
           
         ],
-      ),
+      ),*/
     ],
   ),
 );
@@ -272,6 +276,7 @@ final dataCardContent = Container(
         width: 18.0,
         color: new Color(0xff00c6ff),
       ),
+      /*
       new Row(
         children: <Widget>[
           new Expanded(
@@ -296,7 +301,7 @@ final dataCardContent = Container(
           
           
         ],
-      ),
+      ),*/
     ],
   ),
 );
@@ -415,7 +420,7 @@ final benchpressMenuCard = new Container(
       onTap:(){
         Navigator.push(
           context, 
-         MaterialPageRoute(builder: (context)=>SquatsPage()),
+         MaterialPageRoute(builder: (context)=>BenchPressPage()),
          
         );
       }
@@ -425,20 +430,20 @@ final benchpressMenuCard = new Container(
 
 }
 
-class Deadliftcard extends StatelessWidget{
+class Alarmcard extends StatelessWidget{
   @override
 
-  final deadliftThumbnail = new Container(
+  final alarmThumbnail = new Container(
   margin: new EdgeInsets.symmetric(vertical: 16.0),
   alignment: FractionalOffset.centerLeft,
   child: new Image(
-    image: new AssetImage('assets/img/deadlift_icon.png' ),//여기
+    image: new AssetImage('assets/img/alarm.png' ),//여기
     height: 92.0,
     width: 92.0,
   ),
 );
-  final deadliftMenuCard = new Container(
-  child: deadliftCardContent,
+  final alarmMenuCard = new Container(
+  child: alarmCardContent,
   height: 120.0,
   margin: new EdgeInsets.only(left: 46.0),
 
@@ -465,8 +470,8 @@ class Deadliftcard extends StatelessWidget{
           horizontal: 24.0,
         ),
         child: new Stack(children: <Widget>[
-          deadliftMenuCard,
-          deadliftThumbnail,
+          alarmMenuCard,
+          alarmThumbnail,
           
         ]
         )

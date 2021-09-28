@@ -29,15 +29,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  #using youtube.
   cupertino_icons: ^1.0.2
   youtube_player_flutter: ^8.0.0
   youtube_player_iframe: ^2.2.2
-
-  #using youtube
+  android_alarm_manager_plus: ^1.2.0
+  shared_preferences: ^2.0.8
+ 
   
 
 dev_dependencies:
@@ -76,6 +79,9 @@ flutter:
     - assets/img/setting_icon.png
     - assets/img/squats_background.jpg
     - assets/img/squats_background1.jpg
+    - assets/img/alarm.png
+    - assets/img/BenchPress_background.jpg
+    
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

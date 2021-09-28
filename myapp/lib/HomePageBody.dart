@@ -32,7 +32,7 @@ class HomePageBody extends StatelessWidget {
       children: <Widget>[
         SquatsCard(),
         BenchpressCard(),
-        Deadliftcard(),
+        Alarmcard(),
         Setting(),
         Data(),
       ],
