@@ -4,31 +4,10 @@ import 'MenuRow.dart';
 class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext) {
-    /*return new Expanded(
-      child: new Container(
-        color: new Color(0xFF736AB7),
-        
-        child: new CustomScrollView(
-          scrollDirection: Axis.vertical,
-          slivers: [
-            new SliverPadding(
-              padding: const EdgeInsets.symmetric(vertical: 24.0),
-              /*
-              sliver: new SliverChildBuilderDelegate((context, index) => new PlanetRow(planets[index])),
-              childCount: plantet.length,
-              */
-              ),
-          ],
-        ),
-
-
-      
-
-     ),
-    );*/
+    
     
     color: new Color(0xFF736AB7);
-    return new Column(
+    /*return new Column(
       children: <Widget>[
         SquatsCard(),
         BenchpressCard(),
@@ -36,6 +15,18 @@ class HomePageBody extends StatelessWidget {
         Setting(),
         Data(),
       ],
+    );*/
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Column(
+        children: <Widget>[
+          SquatsCard(),
+          BenchpressCard(),
+          Alarmcard(),
+          Setting(),
+          Data(),
+        ],
+      ),
     );
    
 

@@ -4,6 +4,15 @@ class replaceSquatsTitle extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.only(top:20.0),
+      child: 
+      Text(
+      "Replace",
+      style: TextStyle(fontSize: 30),
+      
+      ),
+    );
+    
   }
 }

@@ -12,15 +12,20 @@ class replaceSquatsPage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      body: Column(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal:20.0),
+        child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           replaceSquatsTitle(),
           replaceSquatsMenu(),
-          replaceSquatsItem("imageName", "title"),
-          replaceSquatsItem("imageName", "title"),
-          replaceSquatsItem("imageName", "title"),
+          replaceSquatsItem("mars.png", "title"),
+          replaceSquatsItem("mars.png", "title"),
+          replaceSquatsItem("mars.png", "title"),
         ],
       ),
+      ),
+      
     );
   }
 }

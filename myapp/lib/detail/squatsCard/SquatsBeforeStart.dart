@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 //import '/workspaces/APP_IoT_PowerManual_PowerManual/myapp/lib/MenuRow.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:myapp/replace/page/replaceSquatsPage.dart';
 import '../youtubelink/SquatsStrechingYoutube.dart';
 import '../youtubelink/HowToSquatsYoutube.dart';
 import 'SquatsDetail.dart';
@@ -71,10 +72,7 @@ List _widgetOptions = [
     SquatsStrechingYoutubePlayerDemo(title: "Squats Streching",),
     HowtoSquatsYoutubePlayerDemo(title: "How to Squats"),
    
-    Text(
-      'Places',
-      style: TextStyle(fontSize: 30, fontFamily: 'DoHyeonRegular'),
-    ),
+    replaceSquatsPage(),
     Text(
       'News',
       style: TextStyle(fontSize: 30, fontFamily: 'DoHyeonRegular'),
