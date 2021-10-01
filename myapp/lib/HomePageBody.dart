@@ -16,9 +16,10 @@ class HomePageBody extends StatelessWidget {
         Data(),
       ],
     );*/
+    
+    
     return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Column(
+        child: ListView(
         children: <Widget>[
           SquatsCard(),
           BenchpressCard(),
@@ -27,7 +28,10 @@ class HomePageBody extends StatelessWidget {
           Data(),
         ],
       ),
-    );
+      )
+    ;
+    
+    
    
 
 

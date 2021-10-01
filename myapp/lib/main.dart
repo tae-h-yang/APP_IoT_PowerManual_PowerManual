@@ -10,6 +10,7 @@ void main() {
   runApp(new MaterialApp(
     title:"Power Maual",
     theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFF736AB7)),
+    
     home: new HomePage(),
     //home: new AlarmManagerExampleApp(),
   ));
