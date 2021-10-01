@@ -19,9 +19,9 @@ class replaceSquatsPage extends StatelessWidget{
         children: [
           replaceSquatsTitle(),
           replaceSquatsMenu(),
-          replaceSquatsItem("mars.png", "title"),
-          replaceSquatsItem("mars.png", "title"),
-          replaceSquatsItem("mars.png", "title"),
+          replaceSquatsItem1(),
+          replaceSquatsItem2(),
+          replaceSquatsItem3(),
         ],
       ),
       ),
