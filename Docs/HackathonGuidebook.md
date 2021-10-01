@@ -12,9 +12,9 @@
 
 - GitHub 활용  
 **![](https://lh3.googleusercontent.com/ccvSmtTLDJBPooH_ypFkqKDP_PMbKaLT8OWRVDpGqHig9aczGIJ1h1vcSZRLFMaF9lxZT54fgVjpjJg7YPw8dzS7kNO-aoPRuxgq6RsHvAkcLOuS63N9fkVCM4eS-TjjpwZ8uJCR=s0)**  
-=> <span class="evidence">==팀명 이름 정하기==</span>, <span class="evidence">==description 추가하기==</span>  
+=> <span style="color:red">팀명 이름 정하기</span>, <span style="color:blue">description 추가하기</span>  
 **![](https://lh4.googleusercontent.com/QXvOIP8rras5xA-amHYLA2bWWogSvMZiEiqKbK4bZrJ-CbdbGyRkNb6MGa3XWp6fD4wFKbiS9YvwBIcI4VnPX-2QlUEd1tmt5Je-G8xmd_0cjQrM5rMnPRpSteWBR_a9KKpO8WoD=s0)**  
-=> ==Readme 파일 제작하기==  
+=> <span style="color:red">Readme 파일 제작하기</span>  
 **![](https://lh4.googleusercontent.com/46bFoHBaE78YzNLDl4_P4mPRrf0zv2fW06jgzwcGrAF5o_S7z7INVK-FedgUblf1m32opqP5AtCg3OPi-d3a2-nkDyaC9WvTpU4HWQuY87bDXcY1kxeQPTT6_d2W_mOTC9hO-iPL=s0)**
 
 - 최종제출  
@@ -40,3 +40,5 @@
 **![](https://lh5.googleusercontent.com/GQ9rrNydFoz65Qx1_Hyl235SGFP47FbCM1BP2kdKgRRr91p99kVM_ClqhAnvwep3j7b6WBXBO1_Le2zbeAvZ2cY5S4cYpLrYthSm80qMlqal7sxT3JX80Chsp6XAJlgMdh2QB_AH=s0)**
 **![](https://lh5.googleusercontent.com/--o7ZE7EnT9f4VhYOQg3AjMYAfrPWXsrdbfzGHVSsY72jqNJQNvyBtA6HQOPT8dlVsD4jjBcjN5eErA7NuZFs9hdG3_PyhQ3At4YGYVxR4LGL62osKqItrMrFcXeTTa9M93uu_L8=s0)**
 **![](https://lh4.googleusercontent.com/wwtwJC6JmsGL6ku2QBCmB2L-Scr8jHMIGOmQkdjZsQoJxCSl-kAxdujrNC4nJJPdjkq6yI9bA1LueihCQfgwb902MWsT76wNBmXLvIpe6zI0Ywj-PsOju0zzsohCIcE7W_4N8TAw=s0)**
+
+_출처: OSAM, 온라인 해커톤 가이드북 멘티_
