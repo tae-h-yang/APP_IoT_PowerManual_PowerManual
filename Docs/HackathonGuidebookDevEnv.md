@@ -6,7 +6,6 @@
 
 - Codespace 생성 & 둘러보기  
 ![](https://lh3.googleusercontent.com/oAGR0omd6fjHKVi2A8p3gVl_0h0ljhhrfl9-RNivTiWnrJQu4ikd5BfGs4awTsfXOMvr_XTmRZCD2IQMuBlQlRaTnQrmJ4R4EBV-wz7xBa_Qa-RTeTMHDdyWzWNA_oDu0JPHshh2=s0)
-
 ![](https://lh4.googleusercontent.com/qppvyUtCEhWRnzRsHqwvsPDPFL6HPfWj13erQqshGmu20uqihCEQxa2nODUzem_KmXFHPTKXoy5VFHzJB4dK_t6SOIPPB9Cqc0k4wT42ZLWOHSH07xSNwNa5z31Ht7DXBOJpOJzM=s0)
 
 ![](https://lh3.googleusercontent.com/FqnCkI5YFiHVNNCXoTtyyLHRvn06QRXOVzUrtmqfCpCotmBl4uL2DtwGJfigcmRXqx25gL1lTLnZGIYHzBLAS6EXVpRRqPhzZIUPyRWE7Mum1qTlZk5XYfMZblIIhYLpmJUp6Q53=s0)
