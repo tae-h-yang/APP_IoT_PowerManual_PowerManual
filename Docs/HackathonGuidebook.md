@@ -12,9 +12,9 @@
 
 - GitHub 활용  
 **![](https://lh3.googleusercontent.com/ccvSmtTLDJBPooH_ypFkqKDP_PMbKaLT8OWRVDpGqHig9aczGIJ1h1vcSZRLFMaF9lxZT54fgVjpjJg7YPw8dzS7kNO-aoPRuxgq6RsHvAkcLOuS63N9fkVCM4eS-TjjpwZ8uJCR=s0)**  
-=> ==팀명 이름 정하기==, ==description 추가하기==
+=> <span class="evidence">==팀명 이름 정하기==</span>, <span class="evidence">==description 추가하기==</span>  
 **![](https://lh4.googleusercontent.com/QXvOIP8rras5xA-amHYLA2bWWogSvMZiEiqKbK4bZrJ-CbdbGyRkNb6MGa3XWp6fD4wFKbiS9YvwBIcI4VnPX-2QlUEd1tmt5Je-G8xmd_0cjQrM5rMnPRpSteWBR_a9KKpO8WoD=s0)**  
-=> ==Readme 파일 제작하기==
+=> ==Readme 파일 제작하기==  
 **![](https://lh4.googleusercontent.com/46bFoHBaE78YzNLDl4_P4mPRrf0zv2fW06jgzwcGrAF5o_S7z7INVK-FedgUblf1m32opqP5AtCg3OPi-d3a2-nkDyaC9WvTpU4HWQuY87bDXcY1kxeQPTT6_d2W_mOTC9hO-iPL=s0)**
 
 - 최종제출  
