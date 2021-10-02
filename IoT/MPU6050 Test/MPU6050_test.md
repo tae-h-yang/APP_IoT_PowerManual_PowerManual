@@ -31,5 +31,5 @@ https://wokwi.com/arduino/projects/311333884930294337
 
 4차 Test:
 "Complementary Filter로 angle 얻기"  
-
+![](/workspaces/APP_IoT_PowerManual_PowerManual/IoT/MPU6050 Test/4차 Test/complementary filter.png)  
 
