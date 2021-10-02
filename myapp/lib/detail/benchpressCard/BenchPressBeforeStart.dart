@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 //import '/workspaces/APP_IoT_PowerManual_PowerManual/myapp/lib/MenuRow.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:myapp/replace/page/replaceBenchPressPage.dart';
 import '../youtubelink/BenchPressStrechingYoutube.dart';
 import '../youtubelink/HowToBenchPressYoutube.dart';
 import 'BenchPressDetail.dart';
@@ -70,11 +71,8 @@ List _widgetOptions = [
     BenchPressDetailPage(),
     BenchPressStrechingYoutubePlayerDemo(title: "Bench Press Streching",),
     HowtoBenchPressYoutubePlayerDemo(title: "How to Bench Press"),
-   
-    Text(
-      'Places',
-      style: TextStyle(fontSize: 30, fontFamily: 'DoHyeonRegular'),
-    ),
+    replaceBenchPressPage(),
+    
     Text(
       'News',
       style: TextStyle(fontSize: 30, fontFamily: 'DoHyeonRegular'),
