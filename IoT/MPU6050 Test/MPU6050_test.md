@@ -12,4 +12,7 @@ https://www.hackster.io/Hack-star-Arduino/arduino-simulator-adafruit-mpu6050-gyr
 get_raw _data.ino  
 diagram.json
 
+2차 Test:
+"Accelerometer로 부터 angle 얻기"
+
 
