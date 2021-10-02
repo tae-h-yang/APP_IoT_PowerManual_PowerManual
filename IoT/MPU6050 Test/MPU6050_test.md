@@ -9,10 +9,10 @@ https://www.hackster.io/Hack-star-Arduino/arduino-simulator-adafruit-mpu6050-gyr
 
 1차 Test:
 "Raw 데이터 얻기"  
-get_raw _data.ino  
-diagram.json
+결과: 기울기 센서가 움직임에 따라 raw데이터도 변함
 
 2차 Test:
 "Accelerometer로 부터 angle 얻기"
-
+1차와 같은 회로 사용
+움직임이 없는 상태에서 보다 정확한 값을 얻을 수 있음
 
