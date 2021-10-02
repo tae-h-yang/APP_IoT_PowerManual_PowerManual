@@ -1,6 +1,6 @@
 WOKWI: MPU6050 시뮬레이터
 Fritzing: 회로 시뮬레이터
-사용된 부품: Arduino Nano, MPU6050
+사용된 부품: Arduino Nano, GY-521 모듈(MPU6050 센서)
 
 참고 자료:
 https://rasino.tistory.com/325 => MPU6050 센서 실습(MPU Library 사용 X)
