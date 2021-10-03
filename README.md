@@ -4,7 +4,7 @@
 
 # Project Name: PowerManual
 ![Logo](https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png)
-
+<img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/logo.png?raw=true" width="400" height="400"/>  
 프로젝트명 또는 프로젝트 로고 이미지 **(택1)**
 
 ## 프로잭트 소개
