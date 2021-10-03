@@ -11,7 +11,8 @@ https://www.hackster.io/Hack-star-Arduino/arduino-simulator-adafruit-mpu6050-gyr
 "Raw 데이터 얻기"  
 https://wokwi.com/arduino/projects/311299741125182016  
 기울기 센서가 움직임에 따라 raw데이터도 변함
-시뮬레이션에서 x축 0, y축 0, z축 1g 상태는 기울기 센서가 위를 바라보며 가만히 놓여있는 상태이다.
+시뮬레이션에서 x축 0, y축 0, z축 1g 상태는 기울기 센서가 위를 바라보며 가만히 놓여있는 상태이다.  
+
 
 
 2차 Test:  
