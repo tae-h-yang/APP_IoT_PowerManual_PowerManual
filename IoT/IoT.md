@@ -2,7 +2,7 @@ PowerManual 디바이스
 
 형태:  
 **![](http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg)**  
-=> 몸 어디에나 착용할 수 있는 스트랩 형태  
+=> 팔다리에 착용할 수 있는 스트랩 형태  
 
 부품:  
 스트랩, Arduino Nano, 가속도 센서(MPU6050), 블루투스 모듈, 전원 LED, 블루투스 LED, 운동 상태 LED, 전원 버튼, 블루투스 연결 버튼(?), 수은 건전지  
