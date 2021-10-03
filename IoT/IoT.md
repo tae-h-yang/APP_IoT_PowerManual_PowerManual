@@ -2,6 +2,7 @@ PowerManual 디바이스
 
 형태:  
 **![](http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg)**  
+<img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="200" height="400"/>  
 => 팔다리에 착용할 수 있는 스트랩 형태  
 
 부품:  
