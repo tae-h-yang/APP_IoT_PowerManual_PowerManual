@@ -51,5 +51,5 @@ ex) 스쿼트를 할때 하체가 내려가면서 무릎이 너무 앞으로 쏠
 판단 원리:  
 구분 동작 1까지의 시간에 따른 x, y, z축 각도 값들을 올바르게 운동했을때의 각도값과 비교하여 판단(선형일 것으로 예상 따라서 선형 추세선을 그려 기울기나 벡터 cosine similarity 비교), 구분 동작 1 최종 값(+- 오차) 까지의 도달이 너무 빠르면 판단 4, 너무 느리면 5
 
-<img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
+<img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/cosine%20similarity.png?raw=true" width="400" height="400"/>  
 
