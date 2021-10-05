@@ -10,7 +10,10 @@
 
 
 ## 기능 설명
+### APP
  - 설명 기입
+### IoT
+ -  
 
 ## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 * ECMAScript 6 지원 브라우저 사용
