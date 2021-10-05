@@ -47,6 +47,7 @@ $ yarn start or npm run start
 ## 팀 정보 (Team Information)
 - YeChan Lee (tuuktuc86@hanmail.net), Github Id: tuuktuc86
 - Taehoon Yang (taehoonyang98@naver.com), Github Id: hooniii98
+- SangGyu Oh (sg000515@gmail.com), Github Id: soekam
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
  * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
