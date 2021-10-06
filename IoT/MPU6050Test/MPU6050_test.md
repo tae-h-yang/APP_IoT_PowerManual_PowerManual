@@ -6,6 +6,7 @@ Fritzing: 회로 시뮬레이터
 https://rasino.tistory.com/325 => MPU6050 센서 실습(MPU Library 사용 X)  
 https://diymaker.tistory.com/79 => Arduino Nano I2C pinmap  
 https://www.hackster.io/Hack-star-Arduino/arduino-simulator-adafruit-mpu6050-gyro-accelorometer-9678d6 => Virtual Arduino Simulator with MPU6050  
+https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO202031064817950&dbt=NART => 관성 센서기반 스쿼트 각도 측정 융합 시스템 논문  
 
 1차 Test:  
 "Raw 데이터 얻기"  
