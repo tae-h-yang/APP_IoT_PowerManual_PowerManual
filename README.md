@@ -15,16 +15,12 @@
        <img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
        <팔 또는 다리에 착용할 수 있는 스트랩 형태 *[Tinkercad로 렌더링 예정]*>  
    - 스트랩은 운동할 때 원래 부상방지, 힘 보조등의 이유로 많이 사용되는 만큼 운동할 때 사용자에게 크게 방해가 되지 않게끔 디자인 하였습니다.  
-   
    <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/powermanual_device.png?raw=true"/>  
-
-
-
-1. 슬라이드 스위치,
-2. 미니 푸시버튼
-3. 전원 led
-4. 블루투스 led
-5. 운동상태 led
+   1. 슬라이드 스위치,
+   2. 미니 푸시버튼
+   3. 전원 led
+   4. 블루투스 led
+   5. 운동상태 led
 
  - 주기능:  
         디바이스가 착용된 부위의 움직임을 추적하여 운동을 올바른 자세로 하고 있는지 실시간으로 판단하여 판단 결과를 앱으로 전송해줍니다.
