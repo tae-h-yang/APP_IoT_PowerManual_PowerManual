@@ -16,7 +16,7 @@
        <팔 또는 다리에 착용할 수 있는 스트랩 형태 *[Tinkercad로 렌더링 예정]*>  
    - 스트랩은 운동할 때 원래 부상방지, 힘 보조등의 이유로 많이 사용되는 만큼 운동할 때 사용자에게 크게 방해가 되지 않게끔 디자인 하였습니다.
 
-   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/powermanual_device.png?raw=true"/>  
+   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/PowermanualDevice.png?raw=true"/>  
 1. 슬라이드 스위치
 2. 미니 푸시버튼
 3. 전원 led
