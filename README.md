@@ -21,7 +21,7 @@
 
    <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/PowermanualDevice.png?raw=true"/>
 
-   1. 슬라이드 스위치: 디바이스의 전원을 on/off 합니다.  
+  1. 슬라이드 스위치: 디바이스의 전원을 on/off 합니다.  
    2. 미니 푸시버튼: 3초간 누르고 나면 PowerManual앱을 사용할 블루투스 기기를 검색합니다.  
    3. Green LED: 디바이스의 전원이 on이면 초록불이, off면 꺼집니다.  
    4. RGB LED: 블루투스 기기와 연결되어 있지 않으면 빨간불, 연결 중이면 노란불, 연결상태면 초록불이 켜집니다.   
