@@ -11,7 +11,7 @@
 
 ## 기능 설명
 ### 측정 디바이스
-- 구성:
+- 구성:  
       <img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
       => 팔 또는 다리에 착용할 수 있는 스트랩 형태 *[Tinkercad로 렌더링 예정]*
 
