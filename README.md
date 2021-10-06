@@ -6,23 +6,23 @@
 <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/logo.png?raw=true" width="400" height="400"/>  
 
 ## 프로잭트 소개
-- 군대에 들어오고 나서 흔히들 시작하는것 중 하나는 바로 헬스입니다. 20대의 젊은 나이에 멋진 몸을 만들고자 많은 장병들이 부대내 체단실을 이용하면서 하루하루 노력하고 있지만 전문가의 도움 없이 하기에는 어려움도 있고 부상의 위험도 있는 실상입니다. 처음 해보는 장병들은 어떻게 자세를 잡아야할지도 모르겠고 사회에서 헬스를 하다가 온 장병들도 혼자 하다보니 잘못된 자세로 인한 허리부상, 관절부상등을 입는 사례를 종종 목격하고는 합니다. 이렇게 헬스를 할때 가장 중요한 올바른 자세를 정확하게 잡고자 PowerManual은 운동자세 측정 디바이스와 앱을 제공합니다.
+ - 군대에 들어오고 나서 흔히들 시작하는것 중 하나는 바로 헬스입니다. 20대의 젊은 나이에 멋진 몸을 만들고자 많은 장병들이 부대내 체단실을 이용하면서 하루하루 노력하고 있지만 전문가의 도움 없이 하기에는 어려움도 있고 부상의 위험도 있는 실상입니다. 처음 해보는 장병들은 어떻게 자세를 잡아야할지도 모르겠고 사회에서 헬스를 하다가 온 장병들도 혼자 하다보니 잘못된 자세로 인한 허리부상, 관절부상등을 입는 사례를 종종 목격하고는 합니다. 이렇게 헬스를 할때 가장 중요한 올바른 자세를 정확하게 잡고자 PowerManual은 운동자세 측정 디바이스와 앱을 제공합니다.
 
 
 ## 기능 설명
 ### 측정 디바이스
-- 구성:  
-   <img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
-   <팔 또는 다리에 착용할 수 있는 스트랩 형태 *[Tinkercad로 렌더링 예정]*>  
-  - 스트랩은 운동할 때 원래 부상방지, 힘 보조등의 이유로 많이 사용되는 만큼 운동할 때 사용자에게 크게 방해가 되지 않게끔 디자인 하였습니다.  
-   
-   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/powermanual_device.png?raw=true"/>  
+ - 구성:  
+ <img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
+ <팔 또는 다리에 착용할 수 있는 스트랩 형태 *[Tinkercad로 렌더링 예정]*>  
+    - 스트랩은 운동할 때 원래 부상방지, 힘 보조등의 이유로 많이 사용되는 만큼 운동할 때 사용자에게 크게 방해가 되지 않게끔 디자인 하였습니다.  
+   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/powermanual_device.png?raw=true"/>
+
 
 1. 슬라이드 스위치,
-      2. 미니 푸시버튼
-      3. 전원 led
-      4. 블루투스 led
-      5. 운동상태 led
+2. 미니 푸시버튼
+3. 전원 led
+4. 블루투스 led
+5. 운동상태 led
 
  - 주기능:  
         디바이스가 착용된 부위의 움직임을 추적하여 운동을 올바른 자세로 하고 있는지 실시간으로 판단하여 판단 결과를 앱으로 전송해줍니다.
