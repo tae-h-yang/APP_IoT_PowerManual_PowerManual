@@ -10,6 +10,7 @@ GY-521(MPU6050) Raw 데이터 얻기
 const int MPU_ADDR = 0x68; // IC2 통신을 위한 MPU6050의 주소
 int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ; // 가속도(Acceleration) 선언
 void getRawData(); // 센서값 얻는 서브함수의 프로토타입 선언
+void initSensor(); // I2C 통신 시작 서브함수의 프로토타입 선언
 
 void setup() {
   initSensor();

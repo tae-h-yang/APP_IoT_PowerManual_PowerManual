@@ -14,8 +14,6 @@ https://wokwi.com/arduino/projects/311299741125182016
 기울기 센서가 움직임에 따라 raw데이터도 변함
 시뮬레이션에서 x축 0, y축 0, z축 1g 상태는 기울기 센서가 위를 바라보며 가만히 놓여있는 상태이다.  
 
-
-
 2차 Test:  
 "Accelerometer로 부터 angle 얻기"
 https://wokwi.com/arduino/projects/311317515851530816  
@@ -41,4 +39,7 @@ https://wokwi.com/arduino/projects/311334970688799296
 가중치를 과도하게 조정하면 출력 딜레이가 발생하므로 주의  
 cf)칼만필터(출력 딜레이를 줄여주는 필터)는 드론과 같이 빠른 반응이 중요한 곳에 사용하므로 우리 PowerManual에는 불필요함  
 
+Testbed  
+구성:  
+Wemos D1 R2, MPU6050  
 
