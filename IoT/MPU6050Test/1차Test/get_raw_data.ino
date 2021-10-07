@@ -24,7 +24,7 @@ void loop() {
   Serial.print(AcX);
   Serial.print("   AcY:");
   Serial.print(AcY);
-  Serial.print("   AcZ");
+  Serial.print("   AcZ:");
   Serial.print(AcZ);
   Serial.print("   GyX:");
   Serial.print(GyX);

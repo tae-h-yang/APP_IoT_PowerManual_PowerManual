@@ -10,6 +10,10 @@ double angleAcX;
 double angleAcY;
 double angleAcZ;
 const double RADIAN_TO_DEGREE = 180 / 3.14159;
+double getAngleXYZ();
+void initSensor();
+void getData();
+
 
 void setup() {
   initSensor();

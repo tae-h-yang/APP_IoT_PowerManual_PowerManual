@@ -21,6 +21,12 @@ double dt = 0; // 한 사이클 동안 걸린 시간 변수
 double averAcX, averAcY, averAcZ;
 double averGyX, averGyY, averGyZ;
 
+void initSensor();
+void getData();
+void getDT();
+void caliSensor();
+
+
 void setup() {
   initSensor();
   Serial.begin(115200);
