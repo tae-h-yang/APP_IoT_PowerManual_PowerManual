@@ -1,19 +1,16 @@
 /* 
-GY-521(MPU6050) 가속도 센서를 이용해 각도 값 얻기
-중력과 X축, Y축, Z축과의 기울기를 이용한 삼각함수를 적용
+GY-521(MPU6050) Raw 데이터 얻기
+센서의 각축으로부터 가속도와 자이로에 대한 아날로그 데이터를 
+16bit 분해능을 가진 ADC를 거치면 디지털 수치값으로 변환된다.
+"-32768 ~ +32767" 사의 값이 SDA를 통해 출력되게 된다.
+출력된 Raw 데이터는 Serial Monitor를 통해 보여진다. 
 */
 
 #include <Wire.h> // I2C 통신을 위한 라이브러리
 const int MPU_ADDR = 0x68; // IC2 통신을 위한 MPU6050의 주소
 int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ; // 가속도(Acceleration) 선언
-double angleAcX;
-double angleAcY;
-double angleAcZ;
-const double RADIAN_TO_DEGREE = 180 / 3.14159;
-double getAngleXYZ();
-void initSensor();
-void getData();
-
+void getRawData(); // 센서값 얻는 서브함수의 프로토타입 선언
+void initSensor(); // I2C 통신 시작 서브함수의 프로토타입 선언
 
 void setup() {
   initSensor();
@@ -22,27 +19,21 @@ void setup() {
 }
 
 void loop() {
-  getAngleXYZ();
-  Serial.print("Angle x : ");
-  Serial.print(angleAcX);
-  Serial.print("\t\t Angle y: ");
-  Serial.print(angleAcY);
-  Serial.print("\t\t Angle z: ");
-  Serial.println(angleAcZ);
-  delay(20);
-}
-
-double getAngleXYZ() {
-  getData();
-  // 삼각함수를 이용한 Roll 각도 구하기
-  angleAcX = atan(AcY / sqrt(pow(AcX, 2) + pow(AcZ, 2)));
-  angleAcX *= RADIAN_TO_DEGREE;
-  // 삼각함수를 이용한 Pitch 각도 구하기
-  angleAcY = atan(-AcX / sqrt(pow(AcY, 2) + pow(AcZ, 2)));
-  angleAcY *= RADIAN_TO_DEGREE;
-  // 삼각함수를 이용한 Yaw 각도 구하기
-  angleAcZ = atan(sqrt(pow(AcX, 2) + pow(AcY, 2)) / AcZ );
-  angleAcZ *= RADIAN_TO_DEGREE;
+  getRawData(); // 센서값 얻어오는 함수 호출
+  Serial.print("AcX:");
+  Serial.print(AcX);
+  Serial.print(" AcY:");
+  Serial.print(AcY);
+  Serial.print(" AcZ:");
+  Serial.print(AcZ);
+  //Serial.print("   GyX:");
+  //Serial.print(GyX);
+  //Serial.print("   GyY:");
+  //Serial.print(GyY);
+  //Serial.print("   GyZ:");
+  //Serial.print(GyZ);
+  Serial.println();
+  delay(300);
 }
 
 void initSensor() {
@@ -53,7 +44,7 @@ void initSensor() {
   Wire.endTransmission(true);
 }
 
-void getData() {
+void getRawData() {
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x3B); // AcX 레지스터 주소를 지칭
   Wire.endTransmission(false);

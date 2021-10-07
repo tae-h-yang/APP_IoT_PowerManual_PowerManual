@@ -22,15 +22,15 @@ void loop() {
   getRawData(); // 센서값 얻어오는 함수 호출
   Serial.print("AcX:");
   Serial.print(AcX);
-  Serial.print("   AcY:");
+  Serial.print(" AcY:");
   Serial.print(AcY);
-  Serial.print("   AcZ:");
+  Serial.print(" AcZ:");
   Serial.print(AcZ);
-  Serial.print("   GyX:");
+  Serial.print(" GyX:");
   Serial.print(GyX);
-  Serial.print("   GyY:");
+  Serial.print(" GyY:");
   Serial.print(GyY);
-  Serial.print("   GyZ:");
+  Serial.print(" GyZ:");
   Serial.print(GyZ);
   Serial.println();
   delay(300);

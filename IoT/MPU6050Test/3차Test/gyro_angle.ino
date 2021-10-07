@@ -1,6 +1,5 @@
 /* 
-GY-521(MPU6050) 가속도, 자이로 센서를 상보필터를 적용하여
-Roll, Pitch, Yaw 각도 구하기
+GY-521(MPU6050) 자이로 센서를 이용해 Roll, Pitch, Yaw 구하기
 */
 
 #include <Wire.h> // I2C 통신을 위한 라이브러리
@@ -8,11 +7,9 @@ const int MPU_ADDR = 0x68; // IC2 통신을 위한 MPU6050의 주소
 int16_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ; // 가속도(Acceleration) 선언
 double angleAcX, angleAcY, angleAcZ;
 double angleGyX, angleGyY, angleGyZ;
-double angleFiX, angleFiY, angleFiZ;
 
 const double RADIAN_TO_DEGREE = 180 / 3.14159;
 const double DEG_PER_SEC = 23767 / 250; // 1초에 회전하는 각도
-const double ALPHA = 0.9; // 1 / (1 + 0.04); 관성 센서기반 스쿼트 각도 측정 융합 시스템 논문에 따르면 최적의 상보 필터 계수는 0.9 이다.
 
 unsigned long now = 0; // 현재 시간 저장용 변수
 unsigned long past = 0; // 이전 시간 저장용 변수
@@ -26,7 +23,6 @@ void getData();
 void getDT();
 void caliSensor();
 
-
 void setup() {
   initSensor();
   Serial.begin(115200);
@@ -37,41 +33,17 @@ void setup() {
 void loop() {
   getData();
   getDT();
-
-  angleAcX = atan(AcY / sqrt(pow(AcX, 2) + pow(AcZ, 2)));
-  angleAcX *= RADIAN_TO_DEGREE;
-  angleAcY = atan(-AcX / sqrt(pow(AcY, 2) + pow(AcZ, 2)));
-  angleAcY *= RADIAN_TO_DEGREE;
-  // 가속도 센서로는 Z축 회전각 계산 불가
-
-  // 가속도 현재 값에서 초기 평균값을 빼서 센서값에 대한 보정
-  angleGyX += ((GyX - averGyX) / DEG_PER_SEC) * dt;  // 각속도로 변환
+  angleGyX += ((GyX - averGyX) / DEG_PER_SEC) * dt;
   angleGyY += ((GyY - averGyY) / DEG_PER_SEC) * dt;
   angleGyZ += ((GyZ - averGyZ) / DEG_PER_SEC) * dt;
 
-  // 상보필터 처리를 위한 임시각도 저장
-  double angleTmpX = angleFiX + angleGyX * dt;
-  double angleTmpY = angleFiY + angleGyY * dt;
-  double angleTmpZ = angleFiZ + angleGyZ * dt;
-
-  // 상보필터 값 처리
-  // 임시 각도에 0.96, 가속도 센서로 얻어진 각도 0.04의 비중을 두어 현재 각도 구함
-  angleFiX = ALPHA * angleTmpX + (1.0 - ALPHA) * angleAcX;
-  angleFiY = ALPHA * angleTmpY + (1.0 - ALPHA) * angleAcY;
-  angleFiZ = angleGyZ; // Z축은 자이로 센서만을 이용
-  Serial.print("AngleAcX: ");
-  Serial.print(angleAcX);
-  Serial.print("\t FilteredX: ");
-  Serial.print(angleFiX);
-  Serial.print("\t AngleAcY: ");
-  Serial.print(angleAcY);
-  Serial.print("\t FilteredY: ");
-  Serial.print(angleFiY);
-  Serial.print("\t AngleAcZ: ");
-  Serial.print(angleGyZ);
-  Serial.print("\t FilteredZ: ");
-  Serial.println(angleFiZ);
-  delay(100);
+  Serial.print("Angle Gyro X : ");
+  Serial.print(angleGyX);
+  Serial.print(" Angle Gyro Y: ");
+  Serial.print(angleGyY);
+  Serial.print(" Angle Gyro Z: ");
+  Serial.println(angleGyZ);
+  delay(20);
 }
 
 void initSensor() {
