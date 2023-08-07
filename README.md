@@ -17,8 +17,8 @@
        <It's a strap design that can be worn on the arm or leg. *[Rendering planned with Tinkercad]*.>  
    - Straps are commonly used during exercise for injury prevention and strength assistance. Therefore, they have been designed not to be obtrusive to the user during workouts.
 
-   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/PowermanualDevice.png?raw=true"/>
-
+   <img src="https://github.com/tuuktuc86/APP_IoT_PowerManual_PowerManual/blob/main/Images/PowermanualDevice.png"/>
+   
    1. Slide Switch: Turns the device power on/off.  
    2. Mini Push Button: Pressing it for 3 seconds searches for the Bluetooth device to use with the PowerManual app.
    3. Green LED: If the device power is on, the green light is on, and if it's off, the light turns off.
