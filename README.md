@@ -54,7 +54,7 @@ $ yarn start or npm run start
 ```
 
 ## 팀 정보 (Team Information)
-- YeChan Lee (tuuktuc86@hanmail.net), Github Id: tuuktuc86
+- YeChan Lee (ychan417@naver.com), Github Id: tuuktuc86
 - Taehoon Yang (taehoonyang98@naver.com), Github Id: hooniii98
 - SangGyu Oh (sg000515@gmail.com), Github Id: soekam
 
