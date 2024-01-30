@@ -28,18 +28,15 @@
    7. Internal Charging Module USB Port: Equipped with a USB port for charging.
    
 
-### APP
- - 설명 기입 
-
-## 테스트 모듈 착용 이미지
-- 스쿼트 시연시 아래와 같이 허벅지에 착용함
+## Test module wearing image
+- Worn on the thigh as follows during a squat demonstration
 <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/%EC%B0%A9%EC%9A%A9%EC%82%AC%EC%A7%841.png?raw=true"/>
 
 ## 시연 영상
-* [전원스위치와 LED 시뮬레이션](https://youtu.be/p0WgclJNXeo)
-* [스쿼트측정과 운동상태 LED 시뮬레이션](https://youtu.be/8TwuZ1K5hpM)
-* [스쿼트측정 시연영상](https://youtu.be/hADi2CqFvGY)
-* [종합 시연영상](https://youtu.be/UrrtCfTJw_U)   
+* [Power switch and LED simulation](https://youtu.be/p0WgclJNXeo)
+* [Squat measurement and exercise state LED simulation](https://youtu.be/8TwuZ1K5hpM)
+* [Squat measurement demonstration video](https://youtu.be/hADi2CqFvGY)
+* [Comprehensive demonstration video](https://youtu.be/UrrtCfTJw_U)   
 
 ## APP
 
