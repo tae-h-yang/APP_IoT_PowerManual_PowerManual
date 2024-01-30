@@ -31,27 +31,55 @@
 ### APP
  - 설명 기입 
 
-## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
+## 테스트 모듈 착용 이미지
+- 스쿼트 시연시 아래와 같이 허벅지에 착용함
+<img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/Images/%EC%B0%A9%EC%9A%A9%EC%82%AC%EC%A7%841.png?raw=true"/>
+
+## 시연 영상
+* [전원스위치와 LED 시뮬레이션](https://youtu.be/p0WgclJNXeo)
+* [스쿼트측정과 운동상태 LED 시뮬레이션](https://youtu.be/8TwuZ1K5hpM)
+* [스쿼트측정 시연영상](https://youtu.be/hADi2CqFvGY)
+* [종합 시연영상](https://youtu.be/UrrtCfTJw_U)   
+
+## APP
+
+### 화면  
+   | <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/시작화면.png?raw=true" width="200" height="350"/> </br> 시작화면| <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 info.png?raw=true" width="200" height="350"/> </br> 스쿼트 info | <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 stretching.png?raw=true" width="200" height="350"/> </br> 스쿼트 스트레칭 |  <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 guide.png?raw=true" width="200" height="350"/> </br> 스쿼트 가이드 |
+| :------------: | :------------: | :------------: | :------------: |
+| <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 replace.png?raw=true" width="200" height="350"/> </br> 스쿼트 대체운동  | <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 exercise.png?raw=true" width="200" height="350"/> </br> 스쿼트 운동 시작  |  <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 exercise squats.png?raw=true" width="200" height="350"/> </br> 스쿼트 운동화면 |  <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 error.png?raw=true" width="200" height="350"/> </br> 잘못된 자세 교정 화면 |
+| <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/스쿼트 final.png?raw=true" width="200" height="350"/> </br> 운동 종료 후 화면  | <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/벤치프레스 info.png?raw=true" width="200" height="350"/> </br> 벤치프레스 info | <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/벤치프레스 beforeStart.png?raw=true" width="200" height="350"/> </br> 벤치프레스 운동시작 |  <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/myapp/mdImg/motivation.png?raw=true" width="200" height="350"/> </br> 운동자극 글귀 |
+
+    
+
+<!--## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 * ECMAScript 6 지원 브라우저 사용
 * 권장: Google Chrome 버젼 77 이상
-
+-->
 ## 기술 스택 (Technique Used) 
-### Server(back-end)
- -  nodejs, php, java 등 서버 언어 버전 
- - express, laravel, sptring boot 등 사용한 프레임워크 
- - DB 등 사용한 다른 프로그램 
- 
-### Front-end
- -  react.js, vue.js 등 사용한 front-end 프레임워크 
- -  UI framework
- - 기타 사용한 라이브러리
+### APP
+ - Flutter 프레임워크
+ - 사용라이브러리: cupertino_icons, youtube_player_iframe, flutter_blue
+
+
+### Arduino
+ -  MsTimer2
 
 ## 설치 안내 (Installation Process)
 ```bash
-$ git clone git주소
-$ yarn or npm install
-$ yarn start or npm run start
+$ flutter build apk
+$ flutter run -d web-server --web-hostname=0.0.0.0
 ```
+<!--
+## 프로젝트 사용법 (Getting Started)
+**마크다운 문법을 이용하여 자유롭게 기재**
+
+잘 모를 경우
+구글 검색 - 마크다운 문법
+[https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017](https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017)
+
+ 편한 마크다운 에디터를 찾아서 사용
+ 샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
+-->
 
 ## 팀 정보 (Team Information)
 - YeChan Lee (ychan417@naver.com), Github Id: tuuktuc86
