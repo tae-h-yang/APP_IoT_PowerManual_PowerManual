@@ -16,7 +16,7 @@
        <img src="http://img2.tmon.kr/cdn3/deals/2021/03/24/5608094054/front_0face_ir3dm.jpg" width="400" height="400"/>  
        <It's a strap design that can be worn on the arm or leg. *[Rendering planned with Tinkercad]*.>  
    - Straps are commonly used during exercise for injury prevention and strength assistance. Therefore, they have been designed not to be obtrusive to the user during workouts.
-
+ 
    <img src="https://github.com/tuuktuc86/APP_IoT_PowerManual_PowerManual/blob/main/Images/PowermanualDevice.png"/>
    
    1. Slide Switch: Turns the device power on/off.  
@@ -26,6 +26,12 @@
    5. RGB LED: When the start exercise button is pressed in the app, it lights up yellow until the preparatory posture is taken. Once the preparatory posture is maintained for 2 seconds, it switches to green, indicating the start of the exercise. If the posture is incorrect during exercise, it alerts with a red light. 
    6. Internal Charging Module LED: Red light is on during charging and turns blue when fully charged.
    7. Internal Charging Module USB Port: Equipped with a USB port for charging.
+  
+  - Device:  
+   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/IoT(Arduino)/device/PowerManualDeviceConfig.png?raw=true"/> 
+
+ - Circuit:  
+   <img src="https://github.com/osamhack2021/APP_IoT_PowerManual_PowerManual/blob/main/IoT(Arduino)/device/PowerManualDevice_bb.png?raw=true"/>  
    
 
 ## Test module wearing image
@@ -48,42 +54,28 @@
 
     
 
-<!--## 컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
-* ECMAScript 6 지원 브라우저 사용
-* 권장: Google Chrome 버젼 77 이상
--->
-## 기술 스택 (Technique Used) 
+
+## Technique Used)
 ### APP
- - Flutter 프레임워크
- - 사용라이브러리: cupertino_icons, youtube_player_iframe, flutter_blue
+ - Flutter 
+ - Libraries: cupertino_icons, youtube_player_iframe, flutter_blue
 
 
 ### Arduino
  -  MsTimer2
 
-## 설치 안내 (Installation Process)
+##Installation Process
 ```bash
 $ flutter build apk
 $ flutter run -d web-server --web-hostname=0.0.0.0
 ```
-<!--
-## 프로젝트 사용법 (Getting Started)
-**마크다운 문법을 이용하여 자유롭게 기재**
 
-잘 모를 경우
-구글 검색 - 마크다운 문법
-[https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017](https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017)
-
- 편한 마크다운 에디터를 찾아서 사용
- 샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
--->
-
-## 팀 정보 (Team Information)
+## Team Information
 - YeChan Lee (ychan417@naver.com), Github Id: tuuktuc86
 - Taehoon Yang (taehoonyang98@naver.com), Github Id: hooniii98
 - SangGyu Oh (sg000515@gmail.com), Github Id: soekam
 
-## 저작권 및 사용권 정보 (Copyleft / End User License)
+## Copyleft / End User License
  * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
 
 This project is licensed under the terms of the MIT license.
